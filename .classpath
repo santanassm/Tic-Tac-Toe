@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="D:/Programs/apache-tomcat-5.5.35/webapps/A5/WebContent/WEB-INF/lib/commons-logging-1.1.jar"/>
+	<classpathentry kind="lib" path="D:/Programs/apache-tomcat-5.5.35/webapps/A5/WebContent/WEB-INF/lib/freemarker-2.3.8.jar"/>
+	<classpathentry kind="lib" path="D:/Programs/apache-tomcat-5.5.35/webapps/A5/WebContent/WEB-INF/lib/ognl-2.6.11.jar"/>
+	<classpathentry kind="lib" path="D:/Programs/apache-tomcat-5.5.35/webapps/A5/WebContent/WEB-INF/lib/struts2-core-2.0.11.jar"/>
+	<classpathentry kind="lib" path="D:/Programs/apache-tomcat-5.5.35/webapps/A5/WebContent/WEB-INF/lib/xwork-2.0.4.jar"/>
+	<classpathentry kind="var" path="CATALINA_HOME/common/lib/jsp-api.jar"/>
+	<classpathentry kind="var" path="CATALINA_HOME/common/lib/naming-factory-dbcp.jar"/>
+	<classpathentry kind="var" path="CATALINA_HOME/common/lib/servlet-api.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

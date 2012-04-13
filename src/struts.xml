@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>  
+  
+    <constant name="struts.devMode" value="true" />
+    <constant name="struts.action.extension" value="action,do" />
+  
+	<package name="default" namespace="/" extends="struts-default"> 
+		
+		<action name="RegisterUser" method="register" class="tictactoe.UserController">
+			<result name="success">/jsp/Register.jsp</result>
+			<interceptor-ref name="defaultStack">
+				<param name="workflow.excludeMethods">adminview</param>
+			</interceptor-ref>		
+		</action>
+		
+		<action name="Refresh" method="refresh" class="tictactoe.UserController">
+			<result name="success">/jsp/Refresh.jsp</result>
+			<interceptor-ref name="defaultStack">
+				<param name="workflow.excludeMethods">adminview</param>
+			</interceptor-ref>		
+		</action>
+		
+		<action name="Invite" method="invite" class="tictactoe.UserController">
+			<result name="success">/jsp/Invite.jsp</result>
+			<interceptor-ref name="defaultStack">
+				<param name="workflow.excludeMethods">adminview</param>
+			</interceptor-ref>		
+		</action>
+		
+		<action name="Play" method="play" class="tictactoe.GameController">
+			<result name="success">/jsp/Game.jsp</result>
+			<interceptor-ref name="defaultStack">
+				<param name="workflow.excludeMethods">adminview</param>
+			</interceptor-ref>		
+		</action>
+
+
+	</package>	
+
+		
+ </struts>

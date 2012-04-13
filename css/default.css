@@ -1,0 +1,122 @@
+/* This file has all CSS that will be used throughout the application. */
+
+* {
+	font-family: "Lucida Grande", Helvetica, Arial, Sans-Serif;
+}
+
+#container {
+	width: 860px;
+	margin: 10px auto;
+}
+
+h1 {
+	background-color: darkred;
+	margin-bottom: 30px;
+	padding: 10px;
+	color: #eee;
+}
+
+a {
+	color: navy;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+input[type="text"], input[type="password"] {
+	width: 200px;
+	font-size: 15px;
+	padding: 4px;
+
+}
+th {
+	min-width: 150px;
+	background: #ccc;
+}
+th,td {
+	border: 1px solid #ccc;
+}
+table {
+	border: 1px solid #aaa;
+}
+
+table .wwFormTable {
+	border: 0 !important;
+}
+
+#board {
+	margin: 0 auto;
+	width: 500px;
+	height: 500px;
+	background: url('../images/board.png') no-repeat;
+}
+
+#board ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#board li {
+	float: left;
+	display: block;
+	width: 33.3%;
+	height: 33.3%;
+	font-size: 128px;
+	line-height: 128%;
+	text-align: center;
+	cursor: not-allowed;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+
+.popup {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin: -75px 0 0 -150px;
+	width: 300px;
+	height: 150px;
+	-moz-opacity: 0.9;
+	opacity: 0.9;
+	background-color: #111;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	color: #eee;
+	display: none;
+	-moz-box-shadow: 2px 2px 4px 4px #222;
+	box-shadow: 2px 2px 4px 4px #222 ;
+	z-index: 10000;
+	padding: 10px;
+}
+
+.popuperror {
+	background-color: #9b0c0c !important;
+}
+
+.username, .opponent {
+	font-weight: bold;
+}
+
+.page {
+	display: none;
+}
+
+.error {
+	color: red;
+	margin-bottom: 10px;
+}
+
+.center {
+	text-align: center;
+}
+
+#board .me {
+	color: green;
+}
+
+#board .them {
+	color: purple;
+}

@@ -1,0 +1,100 @@
+<html>
+
+<head>
+<title>TicTacToe | Welcome</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/tictactoe.js"></script>
+<link href="css/jquery-ui.css" rel="stylesheet" />
+<link href="css/default.css" rel="stylesheet" />
+</head>
+
+<body>
+<div id="container">
+
+<h1>Tic Tac Toe!</h1>
+
+<div id="login" class="page">
+
+<p>Login using the form below.</p>
+
+<br />
+
+
+<form id="login_form">
+<p>Username:<br /><input type="text" name="username" /></p>
+<button id="login_button">Login</button>
+</form>
+
+</div>
+
+
+<div id="invite" class="page">
+
+<p>Welcome, <span class="username"></span>!</p>
+
+<p>You can either wait for some to invite you or you can invite someone by entering their <em>username</em> below.</p>
+
+<form id="invite_form">
+<p>Username: <input type="text" name="opponent"></p>
+<p><button id="send_invite_button">Send Invite</button></p>
+</form>
+
+<div id="invite_box_popup" class="popup">
+<p>You have been invited to play with <span class="opponent"></span>!</p>
+<p class="center">
+<button id="invite_accept_button">Accept!</button><br>
+<button id="invite_decline_button">Decline</button>
+</p>
+</div>
+
+<p><button id="logout_button">Logout</button></p>
+
+
+</div>
+
+
+
+<div id="play" class="page">
+<p id="message"></p>
+<div id="board">
+<ul>
+	<li id="cell0"></li>
+	<li id="cell1"></li>
+	<li id="cell2"></li>
+
+	<li id="cell3"></li>
+	<li id="cell4"></li>
+	<li id="cell5"></li>
+
+	<li id="cell6"></li>
+	<li id="cell7"></li>
+	<li id="cell8"></li>
+</ul>
+</div>
+
+<p><button id="quit_game_button">Quit</button></p>
+
+</div>
+
+
+
+</div>
+
+
+<div id="error_popup" class="popup popuperror">
+<p class="center"><strong>ERROR</strong><br /></p>
+<p id="error_message"></p>
+<p class="center"><button id="close_error_popup">OK</button></p>
+</div>
+
+<div id="generic_popup" class="popup">
+<p class="message center"></p>
+<p class="center"><button id="close_generic_popup">OK</button></p>
+</div>
+
+
+
+
+</body>
+</html>
